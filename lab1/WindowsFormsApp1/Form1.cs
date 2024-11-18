@@ -201,7 +201,7 @@ namespace WindowsFormsApp1
 
             label1.Text = "Коорд. X";
             label2.Text = "Коорд. Y";
-        }
+		}
 
         private void label2_Click(object sender, EventArgs e)
         {

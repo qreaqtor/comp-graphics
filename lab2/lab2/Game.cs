@@ -36,17 +36,19 @@ namespace lab2
 
             var scale = 0.5f;
 
-            n = 4;
+            n = 5;
             r = 0.5f * scale;
 
 			centre = new Vector3(0f, 0f, 4f);
 
-            move = new Action(() => moveCurve(0.1f));
+            move = new Action(() => moveCurve(0.1f)); // движение по кривой
 
-            //var target = new Vector3(0.0f, 0.0f, 4.0f);
-			//move = new Action(() => moveAround(10, target));
+            //var target = new Vector3(0.5f, 0.5f, 4.0f); // вокруг чего вращать
+            //move = new Action(() => moveAround(10, target)); // вращение вокруг target
 
-			p = getPolygonPoints();
+            //move = new Action(() => moveAround(10, centre)); // вращение вокруг центра фигура
+
+            p = getPolygonPoints();
 
             mode = BeginMode.Polygon;
 
